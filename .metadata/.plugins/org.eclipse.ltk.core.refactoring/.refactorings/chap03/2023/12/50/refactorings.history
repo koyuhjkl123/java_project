@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.keduit._20Methold1&apos; to &apos;_17Methold1&apos;&#x0D;&#x0A;- Original project: &apos;chap03&apos;&#x0D;&#x0A;- Original element: &apos;com.keduit._20Methold1&apos;&#x0D;&#x0A;- Renamed element: &apos;com.keduit._17Methold1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_20Methold1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.keduit{_20Methold1.java[_20Methold1" matchStrategy="1" name="_17Methold1" qualified="false" references="true" similarDeclarations="false" stamp="1702257738794" textual="false" version="1.0"/>
+</session>

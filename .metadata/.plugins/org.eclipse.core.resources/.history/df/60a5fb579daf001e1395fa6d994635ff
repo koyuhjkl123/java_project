@@ -1,0 +1,24 @@
+package com.test;
+
+public class Exam01_Drink {
+	
+//	음료는 아래의 정보를 갖는다.
+//	이름, 가격
+	
+//	음료는 아래의 동작을 수행 할 수 있다.
+//	음료 정보를 문자열로 반환
+	
+	String dirnk;
+	int price;
+	
+	
+	public Exam01_Drink(String dirnk, int price) {
+		this.dirnk = dirnk;
+		this.price = price;
+	}
+	
+	public String getDrink() {
+		return dirnk + " - " + price + "원";
+	}
+	
+}

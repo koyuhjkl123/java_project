@@ -1,0 +1,37 @@
+package com.kediuts;
+
+public class Exam04_Pair<T> {
+	
+	T a; // 정수
+	T b; // 실수
+	
+	
+	public Exam04_Pair(int a, int b) { // 정수형 생성자
+		this.a = a;
+	}
+	
+	
+	public Exam04_Pair(double a, T b) { // 실수형 생성자
+		this.b = b;
+	}
+	
+	int first() { // 인스턴스 메서드
+		return getA();
+	}
+	
+	T second() { // 인스턴스 메서드
+		return getB();
+	}
+	
+	
+	
+	public int getA() { // 값 접근자
+		return a;
+	}
+	
+	public T getB() { // 값 접근자
+		return b;
+	}
+	
+
+}

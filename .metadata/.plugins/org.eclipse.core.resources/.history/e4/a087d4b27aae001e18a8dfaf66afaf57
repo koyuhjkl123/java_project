@@ -1,0 +1,92 @@
+package com.test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class dosiTest {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		String[] City = { "포항", "구미", "경산", "경주", "안동", "김천", "영주", "상주", "영천", "문경" };
+		String[] County = { "칠곡", "의성", "울진", "예천", "청도", "성주", "영덕", "고령", "봉화", "청송", "군위", "영양", "울릉" };
+
+		String[] City_eng = { "Pohang", "Gumi", "Gyeongsan", "Gyeongju", "Andong", "Gimcheon", "Yeongju", "Sangju",
+				"Yeongcheon", "Mungyeong" };
+		String[] County_eng = { "Chilgok", "Uiseong", "Uljin", "Yecheon", "Cheongdo", "Seongju", "Yeongdeok",
+				"Goryeong", "Bonghwa", "Cheongsong", "Gunwi", "Yeongyang", "Ulleung" };
+		String[] count = { "", "", "", "", "", "", "", "", "", "" };
+
+		int count_start = 0;
+		int count_end = 6;
+		int sums = 0;
+
+		List<String> Gyeong1 = new ArrayList<String>(); // 경북 도시명
+		List<String> Gyeong2 = new ArrayList<String>(); // 경북 군
+
+		List<String> Gyeong_random = new ArrayList<String>(Arrays.asList(City_eng));
+
+		for (int i = 0; i < City_eng.length; i++) {
+			Gyeong1.add(City[i]);
+			Gyeong1.add(City_eng[i]);
+		}
+
+		for (int i = 0; i < County_eng.length; i++) {
+			Gyeong2.add(County[i]);
+			Gyeong2.add(County_eng[i]);
+		}
+
+		for (int i = 0; i < County_eng.length; i++) {
+			Gyeong_random.add(County_eng[i]);
+		}
+		System.out.println("경북 도시명, 군 영어 단어를 입력하세요 : ");
+		char ch = scanner.next().charAt(0);
+
+		for (int i = 0; i < 10; i++) {
+			count[i] = Gyeong_random.get((int) (Math.random() * Gyeong_random.size()));
+		}
+
+		while (true) {
+			if (count_start < count_end) {
+				for (int i = 0; i < count.length; i++) {
+					StringBuilder names_m = new StringBuilder("-".repeat(count[i].length()));
+					if (count[i].contains(String.valueOf(ch))) {
+							if (count[i].indexOf(ch) == ch) {
+								names_m.setCharAt(j, ch);
+							} else if (count[i] == names_m.toString()) {
+								System.out.println("모두 맞추셧습니다.");
+							}
+						System.out.println("한 단어를 맞추셨습니다." + names_m);
+						count_start++;
+					} else {
+						System.out.println("단어가 포함되어 있지 않습니다.");
+					}
+				}
+			} else {
+				System.out.printf("사용 횟수 %d번을 모두 사용했습니다.", count_start);
+				break;
+			}
+		}
+
+//		
+
+//		
+
+//		if (names.contains(name_f)) {
+//			for (int i = 0; i < names.length(); i++) {
+//					if (name_f.indexOf(names.charAt(i)) != -1) {
+//						names_m.setCharAt(i, 'O'); // name_f에 해당하는 문자를 'O'로 변경
+//					} else {
+//						names_m.setCharAt(i, 'X'); // name_f에 해당하지 않는 문자를 'X'로 변경
+//					}
+//				
+//			}
+//			System.out.println(names_m);
+//		}
+//		
+
+	}
+
+}
