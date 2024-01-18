@@ -20,7 +20,7 @@ public class Exam02_CastExceptionTest {
 		try {
 			casting(r);
 		} catch (ClassCastException e) {
-			System.out.println("형제 관계 형 변환 불가");
+			System.out.println("형제 관계 클래스는 형 변환 불가");
 		}
 		
 

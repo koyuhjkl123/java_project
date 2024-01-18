@@ -49,6 +49,7 @@ public class Exam01_Book_Rental extends Exam01_Book  {
 	}
 	
 	public LocalDate getToday() {
+		today = LocalDate.now();
 		LocalDate returntoday = today.plusDays(7);
 		
 		return returntoday;

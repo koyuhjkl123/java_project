@@ -12,4 +12,5 @@ module promotiontest {
 	exports ch11;
 	exports com.keduits;
 	requires java.desktop;
+	requires java.sql;
 }

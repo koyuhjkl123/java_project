@@ -6,7 +6,8 @@ public class Exam06_MaxTest {
 		
 		Exam06_Max<Number> n = new Exam06_Max<>();
 		System.out.println(n.max(10.0, 8.0));
-		System.out.println(n.max(5, 8.0));
+		System.out.println(n.max(5, 5.1));
+
 		
 		Exam06_Max<String> s = new Exam06_Max<>();
 		System.out.println(s.max("Hello", "Hi"));

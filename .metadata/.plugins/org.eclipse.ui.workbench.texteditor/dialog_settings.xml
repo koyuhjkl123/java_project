@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="package com.keduit;"/>
 			<item value="Object"/>
 			<item value="book_period"/>
 			<item value="C"/>

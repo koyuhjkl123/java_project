@@ -18,19 +18,15 @@ public class Exam03_TokenPrintTest {
 	}
 
 	public static String showTokens(String s, String g) throws NoSuchElementException {
-//		방법 2
 		String arr = s.replace(g, ""); // 문자열 ,(쉼표) 제거
 		StringTokenizer st = new StringTokenizer(arr); // 교재 354페이지 참조
 		while (st.hasMoreTokens()) {
 			System.out.println(st.nextToken());
 		}
 		return st.nextToken();
-
 	}
-	
-	
-//	public static void main(String[] args) {
-//		방법 1
+}
+
 //		String s = "of the people, by the people, for the people";
 //
 //		try {
@@ -40,7 +36,7 @@ public class Exam03_TokenPrintTest {
 //		}
 //
 //	}
-	
+//	
 //	public static String[] showTokens(String s, String g) throws Exception {
 //		
 //		String arr = s.replace(",", "");
@@ -54,5 +50,3 @@ public class Exam03_TokenPrintTest {
 //		}
 //
 //	}
-
-}
