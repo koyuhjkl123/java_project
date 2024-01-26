@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="T"/>
+		<item key="selection" value="원"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="원"/>
+			<item value="UserItmsNmsSelect"/>
+			<item value="AdminInsert"/>
+			<item value="w"/>
+			<item value="UserSelectMrkttotamt"/>
+			<item value="UserSelectTwo"/>
+			<item value="nextLine"/>
+			<item value="nextline"/>
 			<item value="package com.keduit;"/>
 			<item value="Object"/>
 			<item value="book_period"/>
@@ -15,14 +23,6 @@
 			<item value="reader.readLine();"/>
 			<item value="&apos;"/>
 			<item value="&quot;"/>
-			<item value="&quot;&quot;"/>
-			<item value="B"/>
-			<item value="c"/>
-			<item value="num2"/>
-			<item value="num1"/>
-			<item value="containsNumber"/>
-			<item value="println"/>
-			<item value="printf"/>
 		</list>
 		<list key="replacehistory">
 			<item value="T"/>
